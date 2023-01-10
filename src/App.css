@@ -7,6 +7,46 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#root {
+    height: 100vh;
+}
+
+.main {
+    background: white;
+    height: 100%;
+}
+
+html {
+    height: 100vh;
+}
+
+.App {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background: #222;
+    height: 100vh;
+}
+
+.app {
+    height: 100vh;
+}
+
+/* FOOTER */
+
+.footer {
+    background: grey;
+    text-align: center;
+    padding: 1rem;
+    color: whitesmoke;
+    font-size: 13px;
+}
+
 /* HEADER */
 
 .header {
