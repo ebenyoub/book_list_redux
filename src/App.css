@@ -1,0 +1,208 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    background: grey;
+    padding: 1rem;
+    color: whitesmoke
+}
+
+.buttonTab {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    list-style: none;
+    color: black;
+}
+
+.buttonTab a {
+    width: 50%;
+    text-align: center;
+    background: whitesmoke;
+    text-decoration: none;
+    color: black;
+    line-height: 2rem;
+    cursor: default;
+}
+
+.buttonTab a:hover {
+    background: white;
+}
+
+.buttonTab a:active {
+    font-size: 0.95rem;
+}
+
+.buttonTab a:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.buttonTab a:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.active {
+    background: white !important;
+}
+
+/* FORM */
+
+.addForm,
+.search {
+    text-align: center;
+    padding: 1rem;
+    background: whitesmoke;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+input {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+button,
+.listBook button, .preview {
+    padding: 0.7em;
+    border: none;
+    background: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    font-size: 1rem;
+}
+
+button:hover, .preview:hover {
+    background: lightblue;
+    color: black;
+}
+
+button:active,
+.listBook button:active,
+.preview:active {
+    transform: translateY(1px);
+}
+
+/* LIST */
+
+.listBook {
+    display: block;
+}
+
+.listBook table {
+    width: 100%;
+    padding: 1rem;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.listBook th,
+.listBook td {
+    width: auto;
+    padding: 0.5rem;
+    text-overflow: ellipsis;
+}
+
+.listBook tr {
+    border-bottom: 1px solid #ddd;
+
+}
+
+.listBook thead,
+.listBook tr:hover {
+    background: lightgrey !important;
+}
+
+.listBook tr:nth-child(even) {
+    background: #eee;
+}
+
+.listBook button {
+    display: block;
+    background: lightcoral;
+    margin: 1rem auto;
+
+}
+
+.listBook button:hover {
+    background: coral;
+}
+
+/* LIST SEARCH */
+
+.accordion {
+    max-width: 800px;
+}
+
+.accordion .contentBox {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBox .label {
+    position: relative;
+    padding: 10px;
+    background: #2694af;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accordion .contentBox .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.accordion .contentBox.active .label::before {
+    content: '-';
+}
+
+.accordion .contentBox .content {
+    position: relative;
+    background: whitesmoke;
+    border-radius: 5px;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+    overflow-y: auto;
+}
+
+.accordion .contentBox.active .content {
+    padding: 10px;
+    height: 250px;
+}
+
+img {
+    float: left;
+    margin: 0 1rem 0 0;
+}
+
+.preview {
+    text-decoration: none;
+    font-size: 1rem;
+    height: 15px;
+    margin-left: 1rem;
+}
